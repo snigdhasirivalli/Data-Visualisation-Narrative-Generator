@@ -1,0 +1,678 @@
+{
+  "dataset": {
+    "name": "sales.csv",
+    "domain": "sales",
+    "record_count": 12500,
+    "date_range": {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "columns": {
+      "numeric": [
+        "quantity",
+        "unit_price",
+        "sales",
+        "profit",
+        "year",
+        "month",
+        "week",
+        "profit_margin",
+        "revenue"
+      ],
+      "categorical": [
+        "product",
+        "category",
+        "region",
+        "quarter",
+        "month_name",
+        "period_label"
+      ],
+      "temporal": [
+        "date"
+      ],
+      "identifier": [
+        "order_id"
+      ]
+    },
+    "column_catalogue": {
+      "order_id": {
+        "type": "identifier",
+        "meaning": "Unique order identifier",
+        "unit": null,
+        "expected_range": "ORD000001 \u2013 ORD999999"
+      },
+      "date": {
+        "type": "temporal",
+        "meaning": "Date the order was placed",
+        "unit": "YYYY-MM-DD",
+        "expected_range": "2025-01-01 \u2013 2025-12-31"
+      },
+      "product": {
+        "type": "categorical",
+        "meaning": "Product name",
+        "unit": null,
+        "expected_range": "25 distinct products"
+      },
+      "category": {
+        "type": "categorical",
+        "meaning": "High-level product category",
+        "unit": null,
+        "expected_range": "Electronics | Furniture | Clothing | Groceries | Sports"
+      },
+      "region": {
+        "type": "categorical",
+        "meaning": "Sales region",
+        "unit": null,
+        "expected_range": "North | South | East | West | Central"
+      },
+      "quantity": {
+        "type": "numeric",
+        "meaning": "Units sold per order",
+        "unit": "units",
+        "expected_range": "1 \u2013 8"
+      },
+      "unit_price": {
+        "type": "numeric",
+        "meaning": "Price per unit before discount",
+        "unit": "INR",
+        "expected_range": "100 \u2013 80 000"
+      },
+      "sales": {
+        "type": "numeric",
+        "meaning": "Total revenue for the order (unit_price \u00d7 quantity)",
+        "unit": "INR",
+        "expected_range": "> 0"
+      },
+      "profit": {
+        "type": "numeric",
+        "meaning": "Net profit for the order",
+        "unit": "INR",
+        "expected_range": "> 0"
+      },
+      "year": {
+        "type": "numeric",
+        "meaning": "Calendar year",
+        "unit": null,
+        "expected_range": "2025"
+      },
+      "quarter": {
+        "type": "categorical",
+        "meaning": "Calendar quarter",
+        "unit": null,
+        "expected_range": "Q1 \u2013 Q4"
+      },
+      "month": {
+        "type": "numeric",
+        "meaning": "Month number",
+        "unit": null,
+        "expected_range": "1 \u2013 12"
+      },
+      "month_name": {
+        "type": "categorical",
+        "meaning": "Abbreviated month name",
+        "unit": null,
+        "expected_range": "Jan \u2013 Dec"
+      },
+      "week": {
+        "type": "numeric",
+        "meaning": "ISO week number",
+        "unit": null,
+        "expected_range": "1 \u2013 53"
+      },
+      "profit_margin": {
+        "type": "numeric",
+        "meaning": "Profit as a percentage of sales",
+        "unit": "%",
+        "expected_range": "5 \u2013 45"
+      },
+      "revenue": {
+        "type": "numeric",
+        "meaning": "Alias for sales (consistent with JSON schema)",
+        "unit": "INR",
+        "expected_range": "> 0"
+      },
+      "period_label": {
+        "type": "categorical",
+        "meaning": "Year-Quarter label for period-over-period grouping",
+        "unit": null,
+        "expected_range": "e.g. 2025-Q1"
+      }
+    }
+  },
+  "metrics": [
+    {
+      "name": "Total Revenue",
+      "value": 513162993.55,
+      "unit": "INR",
+      "description": "Total revenue (sum of sales) across all orders and periods."
+    },
+    {
+      "name": "Total Profit",
+      "value": 85249916.50999999,
+      "unit": "INR",
+      "description": "Total profit across all orders."
+    },
+    {
+      "name": "Total Orders",
+      "value": 12500,
+      "unit": "orders",
+      "description": "Count of individual order records in the dataset."
+    },
+    {
+      "name": "Total Quantity Sold",
+      "value": 34017,
+      "unit": "units",
+      "description": "Sum of quantity sold across all orders."
+    },
+    {
+      "name": "Average Order Value",
+      "value": 41053.039484,
+      "unit": "INR",
+      "description": "Mean revenue per order = Total Revenue / Total Orders."
+    },
+    {
+      "name": "Profit Margin",
+      "value": 16.612639177320894,
+      "unit": "percent",
+      "description": "Overall profit as a percentage of revenue = (Total Profit / Total Revenue) \u00d7 100."
+    },
+    {
+      "name": "Best Monthly Revenue Growth",
+      "value": 10.76887262902231,
+      "unit": "percent",
+      "description": "Highest month-over-month revenue growth percentage observed."
+    },
+    {
+      "name": "Worst Monthly Revenue Growth",
+      "value": -16.583734263540858,
+      "unit": "percent",
+      "description": "Lowest (most negative) month-over-month revenue growth percentage observed."
+    }
+  ],
+  "trends": [
+    {
+      "metric": "Revenue",
+      "dimension": "date",
+      "direction": "stable",
+      "change": -4.35,
+      "unit": "percent",
+      "period": {
+        "start": "2025-01-01",
+        "end": "2025-12-31"
+      },
+      "significance": "medium"
+    }
+  ],
+  "comparisons": [
+    {
+      "dimension": "category",
+      "metric": "Revenue",
+      "highest": {
+        "name": "Electronics",
+        "value": 313838778.12
+      },
+      "lowest": {
+        "name": "Groceries",
+        "value": 7903674.8
+      },
+      "all_values": [
+        {
+          "name": "Electronics",
+          "value": 313838778.12
+        },
+        {
+          "name": "Furniture",
+          "value": 115626432.97
+        },
+        {
+          "name": "Sports",
+          "value": 56642867.98
+        },
+        {
+          "name": "Clothing",
+          "value": 19151239.68
+        },
+        {
+          "name": "Groceries",
+          "value": 7903674.8
+        }
+      ]
+    },
+    {
+      "dimension": "region",
+      "metric": "Revenue",
+      "highest": {
+        "name": "East",
+        "value": 108013932.02
+      },
+      "lowest": {
+        "name": "South",
+        "value": 98752543.36
+      },
+      "all_values": [
+        {
+          "name": "East",
+          "value": 108013932.02
+        },
+        {
+          "name": "North",
+          "value": 103526263.9
+        },
+        {
+          "name": "Central",
+          "value": 103169649.91
+        },
+        {
+          "name": "West",
+          "value": 99700604.36
+        },
+        {
+          "name": "South",
+          "value": 98752543.36
+        }
+      ]
+    },
+    {
+      "dimension": "product",
+      "metric": "Revenue",
+      "top": [
+        {
+          "rank": 1,
+          "name": "Tablet",
+          "value": 68305893.06
+        },
+        {
+          "rank": 2,
+          "name": "Laptop",
+          "value": 64912979.78
+        },
+        {
+          "rank": 3,
+          "name": "Headphones",
+          "value": 62927386.72
+        },
+        {
+          "rank": 4,
+          "name": "Smartwatch",
+          "value": 61229904.33
+        },
+        {
+          "rank": 5,
+          "name": "Smartphone",
+          "value": 56462614.23
+        }
+      ],
+      "bottom": [
+        {
+          "rank": 25,
+          "name": "Cooking Oil",
+          "value": 1461575.26
+        },
+        {
+          "rank": 24,
+          "name": "Spices Pack",
+          "value": 1545662.41
+        },
+        {
+          "rank": 23,
+          "name": "Rice",
+          "value": 1582514.51
+        },
+        {
+          "rank": 22,
+          "name": "Snacks",
+          "value": 1598385.83
+        },
+        {
+          "rank": 21,
+          "name": "Dairy Bundle",
+          "value": 1715536.79
+        }
+      ]
+    },
+    {
+      "largest_positive": {
+        "period_key": "2025-03",
+        "growth_pct": 10.77
+      },
+      "largest_negative": {
+        "period_key": "2025-08",
+        "growth_pct": -16.58
+      }
+    }
+  ],
+  "anomalies": [
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-03-06",
+      "value": 3073574.72,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-04-27",
+      "value": 2716569.23,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-05-30",
+      "value": 2707603.67,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-06-26",
+      "value": 2872902.81,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-07-05",
+      "value": 2657655.22,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-07-12",
+      "value": 2883945.27,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-09-22",
+      "value": 2977828.95,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-10-07",
+      "value": 2930584.19,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-10-27",
+      "value": 2872850.79,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2025-11-28",
+      "value": 2695894.45,
+      "expected_range": {
+        "lower": 83518.52,
+        "upper": 2641341.96
+      },
+      "type": "high",
+      "severity": "medium"
+    }
+  ],
+  "distributions": [
+    {
+      "metric": "sales",
+      "mean": 41053.04,
+      "median": 13623.03,
+      "minimum": 101.62,
+      "maximum": 1745498.07,
+      "std": 75038.76,
+      "q1": 3914.96,
+      "q3": 46073.4
+    },
+    {
+      "metric": "profit",
+      "mean": 6819.99,
+      "median": 3065.7,
+      "minimum": 5.78,
+      "maximum": 331316.16,
+      "std": 11503.25,
+      "q1": 738.81,
+      "q3": 8145.55
+    },
+    {
+      "metric": "unit_price",
+      "mean": 14247.56,
+      "median": 5876.5,
+      "minimum": 101.62,
+      "maximum": 79915.48,
+      "std": 18704.86,
+      "q1": 1714.99,
+      "q3": 18709.03
+    },
+    {
+      "metric": "quantity",
+      "mean": 2.72,
+      "median": 2.0,
+      "minimum": 1.0,
+      "maximum": 8.0,
+      "std": 1.72,
+      "q1": 1.0,
+      "q3": 4.0
+    }
+  ],
+  "visualizations": [
+    {
+      "title": "Monthly Revenue",
+      "type": "line",
+      "metric": "Revenue",
+      "dimension": "date",
+      "data": [
+        {
+          "year": 2025,
+          "month": 1,
+          "month_name": "Jan",
+          "revenue": 42043404.29
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "month_name": "Feb",
+          "revenue": 36689326.6
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "month_name": "Mar",
+          "revenue": 40640353.45
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "month_name": "Apr",
+          "revenue": 41335393.24
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "month_name": "May",
+          "revenue": 44563285.51
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "month_name": "Jun",
+          "revenue": 44267514.31
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "month_name": "Jul",
+          "revenue": 48679314.09
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "month_name": "Aug",
+          "revenue": 40606466.0
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "month_name": "Sep",
+          "revenue": 42283978.88
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "month_name": "Oct",
+          "revenue": 45503718.93
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "month_name": "Nov",
+          "revenue": 46336637.83
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "month_name": "Dec",
+          "revenue": 40213600.42
+        }
+      ],
+      "summary": "Revenue trended stable (-4.3%) over the reporting period."
+    },
+    {
+      "title": "Revenue by Category",
+      "type": "bar",
+      "metric": "Revenue",
+      "dimension": "category",
+      "data": [
+        {
+          "category": "Electronics",
+          "value": 313838778.12
+        },
+        {
+          "category": "Furniture",
+          "value": 115626432.97
+        },
+        {
+          "category": "Sports",
+          "value": 56642867.98
+        },
+        {
+          "category": "Clothing",
+          "value": 19151239.68
+        },
+        {
+          "category": "Groceries",
+          "value": 7903674.8
+        }
+      ],
+      "summary": "Electronics generated the highest revenue (INR 313,838,778)."
+    },
+    {
+      "title": "Revenue by Region",
+      "type": "bar",
+      "metric": "Revenue",
+      "dimension": "region",
+      "data": [
+        {
+          "region": "East",
+          "value": 108013932.02
+        },
+        {
+          "region": "North",
+          "value": 103526263.9
+        },
+        {
+          "region": "Central",
+          "value": 103169649.91
+        },
+        {
+          "region": "West",
+          "value": 99700604.36
+        },
+        {
+          "region": "South",
+          "value": 98752543.36
+        }
+      ],
+      "summary": "East led all regions in revenue."
+    },
+    {
+      "title": "Quarterly Revenue",
+      "type": "bar",
+      "metric": "Revenue",
+      "dimension": "quarter",
+      "data": [
+        {
+          "year": 2025,
+          "quarter": "Q1",
+          "revenue": 119373084.34
+        },
+        {
+          "year": 2025,
+          "quarter": "Q2",
+          "revenue": 130166193.06
+        },
+        {
+          "year": 2025,
+          "quarter": "Q3",
+          "revenue": 131569758.97
+        },
+        {
+          "year": 2025,
+          "quarter": "Q4",
+          "revenue": 132053957.18
+        }
+      ],
+      "summary": "Quarterly revenue breakdown for the reporting period."
+    }
+  ]
+}
