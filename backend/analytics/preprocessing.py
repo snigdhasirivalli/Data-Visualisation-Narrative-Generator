@@ -136,10 +136,11 @@ def clean(df: pd.DataFrame, *, drop_duplicate_ids: bool = True) -> pd.DataFrame:
         logger.warning("Dropping %d rows with non-numeric values in %s.", bad_numeric, NUMERIC_COLUMNS)
     df = df.dropna(subset=NUMERIC_COLUMNS)
 
-    # 3. Drop negative KPI values ────────────────────────────────────────────
-    neg_mask = (df[["sales", "profit", "quantity", "unit_price"]] < 0).any(axis=1)
+    # 3. Drop negative values for non-profit columns ──────────────────────────
+    #    Profit CAN be negative (real losses) — so we only check sales, qty, price.
+    neg_mask = (df[["sales", "quantity", "unit_price"]] < 0).any(axis=1)
     if neg_mask.sum():
-        logger.warning("Dropping %d rows with negative KPI values.", neg_mask.sum())
+        logger.warning("Dropping %d rows with negative sales/quantity/unit_price values.", neg_mask.sum())
     df = df[~neg_mask]
 
     # 4. Normalise categoricals ──────────────────────────────────────────────
@@ -221,7 +222,7 @@ def add_derived_fields(df: pd.DataFrame) -> pd.DataFrame:
 def preprocess(
     filepath: str | Path,
     *,
-    drop_duplicate_ids: bool = True,
+    drop_duplicate_ids: bool = False,
 ) -> pd.DataFrame:
     """End-to-end preprocessing pipeline.
 

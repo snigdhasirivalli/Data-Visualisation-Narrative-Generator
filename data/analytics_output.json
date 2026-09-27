@@ -2,10 +2,10 @@
   "dataset": {
     "name": "sales.csv",
     "domain": "sales",
-    "record_count": 12500,
+    "record_count": 9994,
     "date_range": {
-      "start": "2025-01-01",
-      "end": "2025-12-31"
+      "start": "2014-01-03",
+      "end": "2017-12-30"
     },
     "columns": {
       "numeric": [
@@ -142,49 +142,49 @@
   "metrics": [
     {
       "name": "Total Revenue",
-      "value": 513162993.55,
+      "value": 2297200.8603,
       "unit": "INR",
       "description": "Total revenue (sum of sales) across all orders and periods."
     },
     {
       "name": "Total Profit",
-      "value": 85249916.50999999,
+      "value": 286397.02170000004,
       "unit": "INR",
       "description": "Total profit across all orders."
     },
     {
       "name": "Total Orders",
-      "value": 12500,
+      "value": 9994,
       "unit": "orders",
       "description": "Count of individual order records in the dataset."
     },
     {
       "name": "Total Quantity Sold",
-      "value": 34017,
+      "value": 37873,
       "unit": "units",
       "description": "Sum of quantity sold across all orders."
     },
     {
       "name": "Average Order Value",
-      "value": 41053.039484,
+      "value": 229.85800083049827,
       "unit": "INR",
       "description": "Mean revenue per order = Total Revenue / Total Orders."
     },
     {
       "name": "Profit Margin",
-      "value": 16.612639177320894,
+      "value": 12.467217240315607,
       "unit": "percent",
       "description": "Overall profit as a percentage of revenue = (Total Profit / Total Revenue) \u00d7 100."
     },
     {
       "name": "Best Monthly Revenue Growth",
-      "value": 10.76887262902231,
+      "value": 1132.1314093345593,
       "unit": "percent",
       "description": "Highest month-over-month revenue growth percentage observed."
     },
     {
       "name": "Worst Monthly Revenue Growth",
-      "value": -16.583734263540858,
+      "value": -75.2501207922829,
       "unit": "percent",
       "description": "Lowest (most negative) month-over-month revenue growth percentage observed."
     }
@@ -193,14 +193,14 @@
     {
       "metric": "Revenue",
       "dimension": "date",
-      "direction": "stable",
-      "change": -4.35,
+      "direction": "increasing",
+      "change": 488.82,
       "unit": "percent",
       "period": {
-        "start": "2025-01-01",
-        "end": "2025-12-31"
+        "start": "2014-01-03",
+        "end": "2017-12-30"
       },
-      "significance": "medium"
+      "significance": "high"
     }
   ],
   "comparisons": [
@@ -208,33 +208,25 @@
       "dimension": "category",
       "metric": "Revenue",
       "highest": {
-        "name": "Electronics",
-        "value": 313838778.12
+        "name": "Technology",
+        "value": 836154.03
       },
       "lowest": {
-        "name": "Groceries",
-        "value": 7903674.8
+        "name": "Office Supplies",
+        "value": 719047.03
       },
       "all_values": [
         {
-          "name": "Electronics",
-          "value": 313838778.12
+          "name": "Technology",
+          "value": 836154.03
         },
         {
           "name": "Furniture",
-          "value": 115626432.97
+          "value": 741999.8
         },
         {
-          "name": "Sports",
-          "value": 56642867.98
-        },
-        {
-          "name": "Clothing",
-          "value": 19151239.68
-        },
-        {
-          "name": "Groceries",
-          "value": 7903674.8
+          "name": "Office Supplies",
+          "value": 719047.03
         }
       ]
     },
@@ -242,33 +234,29 @@
       "dimension": "region",
       "metric": "Revenue",
       "highest": {
-        "name": "East",
-        "value": 108013932.02
+        "name": "West",
+        "value": 725457.82
       },
       "lowest": {
         "name": "South",
-        "value": 98752543.36
+        "value": 391721.91
       },
       "all_values": [
         {
-          "name": "East",
-          "value": 108013932.02
+          "name": "West",
+          "value": 725457.82
         },
         {
-          "name": "North",
-          "value": 103526263.9
+          "name": "East",
+          "value": 678781.24
         },
         {
           "name": "Central",
-          "value": 103169649.91
-        },
-        {
-          "name": "West",
-          "value": 99700604.36
+          "value": 501239.89
         },
         {
           "name": "South",
-          "value": 98752543.36
+          "value": 391721.91
         }
       ]
     },
@@ -278,66 +266,66 @@
       "top": [
         {
           "rank": 1,
-          "name": "Tablet",
-          "value": 68305893.06
+          "name": "Canon Imageclass 2200 Advanced Copier",
+          "value": 61599.82
         },
         {
           "rank": 2,
-          "name": "Laptop",
-          "value": 64912979.78
+          "name": "Fellowes Pb500 Electric Punch Plastic Comb Binding Machine With Manual Bind",
+          "value": 27453.38
         },
         {
           "rank": 3,
-          "name": "Headphones",
-          "value": 62927386.72
+          "name": "Cisco Telepresence System Ex90 Videoconferencing Unit",
+          "value": 22638.48
         },
         {
           "rank": 4,
-          "name": "Smartwatch",
-          "value": 61229904.33
+          "name": "Hon 5400 Series Task Chairs For Big And Tall",
+          "value": 21870.58
         },
         {
           "rank": 5,
-          "name": "Smartphone",
-          "value": 56462614.23
+          "name": "Gbc Docubind Tl300 Electric Binding System",
+          "value": 19823.48
         }
       ],
       "bottom": [
         {
-          "rank": 25,
-          "name": "Cooking Oil",
-          "value": 1461575.26
+          "rank": 1850,
+          "name": "Eureka Disposable Bags For Sanitaire Vibra Groomer I Upright Vac",
+          "value": 1.62
         },
         {
-          "rank": 24,
-          "name": "Spices Pack",
-          "value": 1545662.41
+          "rank": 1849,
+          "name": "Avery 5",
+          "value": 5.76
         },
         {
-          "rank": 23,
-          "name": "Rice",
-          "value": 1582514.51
+          "rank": 1848,
+          "name": "Xerox 20",
+          "value": 6.48
         },
         {
-          "rank": 22,
-          "name": "Snacks",
-          "value": 1598385.83
+          "rank": 1847,
+          "name": "Grip Seal Envelopes",
+          "value": 7.07
         },
         {
-          "rank": 21,
-          "name": "Dairy Bundle",
-          "value": 1715536.79
+          "rank": 1846,
+          "name": "Avery Hi-Liter Pen Style Six-Color Fluorescent Set",
+          "value": 7.7
         }
       ]
     },
     {
       "largest_positive": {
-        "period_key": "2025-03",
-        "growth_pct": 10.77
+        "period_key": "2014-03",
+        "growth_pct": 1132.13
       },
       "largest_negative": {
-        "period_key": "2025-08",
-        "growth_pct": -16.58
+        "period_key": "2016-01",
+        "growth_pct": -75.25
       }
     }
   ],
@@ -345,11 +333,23 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-03-06",
-      "value": 3073574.72,
+      "observation": "2014-03-18",
+      "value": 28106.72,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
+      },
+      "type": "high",
+      "severity": "high"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2014-06-09",
+      "value": 5463.01,
+      "expected_range": {
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
       "severity": "medium"
@@ -357,11 +357,11 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-04-27",
-      "value": 2716569.23,
+      "observation": "2014-07-25",
+      "value": 8341.29,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
       "severity": "medium"
@@ -369,11 +369,47 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-05-30",
-      "value": 2707603.67,
+      "observation": "2014-09-08",
+      "value": 14228.43,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
+      },
+      "type": "high",
+      "severity": "high"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2014-09-19",
+      "value": 9338.64,
+      "expected_range": {
+        "lower": -2649.34,
+        "upper": 5422.86
+      },
+      "type": "high",
+      "severity": "high"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2014-09-23",
+      "value": 10662.34,
+      "expected_range": {
+        "lower": -2649.34,
+        "upper": 5422.86
+      },
+      "type": "high",
+      "severity": "high"
+    },
+    {
+      "metric": "sales",
+      "dimension": "date",
+      "observation": "2014-09-29",
+      "value": 8109.07,
+      "expected_range": {
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
       "severity": "medium"
@@ -381,11 +417,11 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-06-26",
-      "value": 2872902.81,
+      "observation": "2014-11-04",
+      "value": 6693.75,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
       "severity": "medium"
@@ -393,11 +429,11 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-07-05",
-      "value": 2657655.22,
+      "observation": "2014-11-11",
+      "value": 8114.55,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
       "severity": "medium"
@@ -405,104 +441,56 @@
     {
       "metric": "sales",
       "dimension": "date",
-      "observation": "2025-07-12",
-      "value": 2883945.27,
+      "observation": "2014-11-17",
+      "value": 11544.27,
       "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
+        "lower": -2649.34,
+        "upper": 5422.86
       },
       "type": "high",
-      "severity": "medium"
-    },
-    {
-      "metric": "sales",
-      "dimension": "date",
-      "observation": "2025-09-22",
-      "value": 2977828.95,
-      "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
-      },
-      "type": "high",
-      "severity": "medium"
-    },
-    {
-      "metric": "sales",
-      "dimension": "date",
-      "observation": "2025-10-07",
-      "value": 2930584.19,
-      "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
-      },
-      "type": "high",
-      "severity": "medium"
-    },
-    {
-      "metric": "sales",
-      "dimension": "date",
-      "observation": "2025-10-27",
-      "value": 2872850.79,
-      "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
-      },
-      "type": "high",
-      "severity": "medium"
-    },
-    {
-      "metric": "sales",
-      "dimension": "date",
-      "observation": "2025-11-28",
-      "value": 2695894.45,
-      "expected_range": {
-        "lower": 83518.52,
-        "upper": 2641341.96
-      },
-      "type": "high",
-      "severity": "medium"
+      "severity": "high"
     }
   ],
   "distributions": [
     {
       "metric": "sales",
-      "mean": 41053.04,
-      "median": 13623.03,
-      "minimum": 101.62,
-      "maximum": 1745498.07,
-      "std": 75038.76,
-      "q1": 3914.96,
-      "q3": 46073.4
+      "mean": 229.86,
+      "median": 54.49,
+      "minimum": 0.44,
+      "maximum": 22638.48,
+      "std": 623.25,
+      "q1": 17.28,
+      "q3": 209.94
     },
     {
       "metric": "profit",
-      "mean": 6819.99,
-      "median": 3065.7,
-      "minimum": 5.78,
-      "maximum": 331316.16,
-      "std": 11503.25,
-      "q1": 738.81,
-      "q3": 8145.55
+      "mean": 28.66,
+      "median": 8.67,
+      "minimum": -6599.98,
+      "maximum": 8399.98,
+      "std": 234.26,
+      "q1": 1.73,
+      "q3": 29.36
     },
     {
       "metric": "unit_price",
-      "mean": 14247.56,
-      "median": 5876.5,
-      "minimum": 101.62,
-      "maximum": 79915.48,
-      "std": 18704.86,
-      "q1": 1714.99,
-      "q3": 18709.03
+      "mean": 60.92,
+      "median": 16.27,
+      "minimum": 0.34,
+      "maximum": 3773.08,
+      "std": 142.93,
+      "q1": 5.47,
+      "q3": 63.94
     },
     {
       "metric": "quantity",
-      "mean": 2.72,
-      "median": 2.0,
+      "mean": 3.79,
+      "median": 3.0,
       "minimum": 1.0,
-      "maximum": 8.0,
-      "std": 1.72,
-      "q1": 1.0,
-      "q3": 4.0
+      "maximum": 14.0,
+      "std": 2.23,
+      "q1": 2.0,
+      "q3": 5.0
     }
   ],
   "visualizations": [
@@ -513,79 +501,295 @@
       "dimension": "date",
       "data": [
         {
-          "year": 2025,
+          "year": 2014,
           "month": 1,
           "month_name": "Jan",
-          "revenue": 42043404.29
+          "revenue": 14236.895
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 2,
           "month_name": "Feb",
-          "revenue": 36689326.6
+          "revenue": 4519.892
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 3,
           "month_name": "Mar",
-          "revenue": 40640353.45
+          "revenue": 55691.009
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 4,
           "month_name": "Apr",
-          "revenue": 41335393.24
+          "revenue": 28295.345
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 5,
           "month_name": "May",
-          "revenue": 44563285.51
+          "revenue": 23648.287
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 6,
           "month_name": "Jun",
-          "revenue": 44267514.31
+          "revenue": 34595.1276
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 7,
           "month_name": "Jul",
-          "revenue": 48679314.09
+          "revenue": 33946.393
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 8,
           "month_name": "Aug",
-          "revenue": 40606466.0
+          "revenue": 27909.4685
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 9,
           "month_name": "Sep",
-          "revenue": 42283978.88
+          "revenue": 81777.3508
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 10,
           "month_name": "Oct",
-          "revenue": 45503718.93
+          "revenue": 31453.393
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 11,
           "month_name": "Nov",
-          "revenue": 46336637.83
+          "revenue": 78628.7167
         },
         {
-          "year": 2025,
+          "year": 2014,
           "month": 12,
           "month_name": "Dec",
-          "revenue": 40213600.42
+          "revenue": 69545.6205
+        },
+        {
+          "year": 2015,
+          "month": 1,
+          "month_name": "Jan",
+          "revenue": 18174.0756
+        },
+        {
+          "year": 2015,
+          "month": 2,
+          "month_name": "Feb",
+          "revenue": 11951.411
+        },
+        {
+          "year": 2015,
+          "month": 3,
+          "month_name": "Mar",
+          "revenue": 38726.252
+        },
+        {
+          "year": 2015,
+          "month": 4,
+          "month_name": "Apr",
+          "revenue": 34195.2085
+        },
+        {
+          "year": 2015,
+          "month": 5,
+          "month_name": "May",
+          "revenue": 30131.6865
+        },
+        {
+          "year": 2015,
+          "month": 6,
+          "month_name": "Jun",
+          "revenue": 24797.292
+        },
+        {
+          "year": 2015,
+          "month": 7,
+          "month_name": "Jul",
+          "revenue": 28765.325
+        },
+        {
+          "year": 2015,
+          "month": 8,
+          "month_name": "Aug",
+          "revenue": 36898.332200000004
+        },
+        {
+          "year": 2015,
+          "month": 9,
+          "month_name": "Sep",
+          "revenue": 64595.918
+        },
+        {
+          "year": 2015,
+          "month": 10,
+          "month_name": "Oct",
+          "revenue": 31404.9235
+        },
+        {
+          "year": 2015,
+          "month": 11,
+          "month_name": "Nov",
+          "revenue": 75972.5635
+        },
+        {
+          "year": 2015,
+          "month": 12,
+          "month_name": "Dec",
+          "revenue": 74919.5212
+        },
+        {
+          "year": 2016,
+          "month": 1,
+          "month_name": "Jan",
+          "revenue": 18542.491
+        },
+        {
+          "year": 2016,
+          "month": 2,
+          "month_name": "Feb",
+          "revenue": 22978.815000000002
+        },
+        {
+          "year": 2016,
+          "month": 3,
+          "month_name": "Mar",
+          "revenue": 51715.875
+        },
+        {
+          "year": 2016,
+          "month": 4,
+          "month_name": "Apr",
+          "revenue": 38750.039
+        },
+        {
+          "year": 2016,
+          "month": 5,
+          "month_name": "May",
+          "revenue": 56987.728
+        },
+        {
+          "year": 2016,
+          "month": 6,
+          "month_name": "Jun",
+          "revenue": 40344.534
+        },
+        {
+          "year": 2016,
+          "month": 7,
+          "month_name": "Jul",
+          "revenue": 39261.963
+        },
+        {
+          "year": 2016,
+          "month": 8,
+          "month_name": "Aug",
+          "revenue": 31115.3743
+        },
+        {
+          "year": 2016,
+          "month": 9,
+          "month_name": "Sep",
+          "revenue": 73410.0249
+        },
+        {
+          "year": 2016,
+          "month": 10,
+          "month_name": "Oct",
+          "revenue": 59687.745
+        },
+        {
+          "year": 2016,
+          "month": 11,
+          "month_name": "Nov",
+          "revenue": 79411.9658
+        },
+        {
+          "year": 2016,
+          "month": 12,
+          "month_name": "Dec",
+          "revenue": 96999.043
+        },
+        {
+          "year": 2017,
+          "month": 1,
+          "month_name": "Jan",
+          "revenue": 43971.374
+        },
+        {
+          "year": 2017,
+          "month": 2,
+          "month_name": "Feb",
+          "revenue": 20301.1334
+        },
+        {
+          "year": 2017,
+          "month": 3,
+          "month_name": "Mar",
+          "revenue": 58872.3528
+        },
+        {
+          "year": 2017,
+          "month": 4,
+          "month_name": "Apr",
+          "revenue": 36521.5361
+        },
+        {
+          "year": 2017,
+          "month": 5,
+          "month_name": "May",
+          "revenue": 44261.1102
+        },
+        {
+          "year": 2017,
+          "month": 6,
+          "month_name": "Jun",
+          "revenue": 52981.7257
+        },
+        {
+          "year": 2017,
+          "month": 7,
+          "month_name": "Jul",
+          "revenue": 45264.416
+        },
+        {
+          "year": 2017,
+          "month": 8,
+          "month_name": "Aug",
+          "revenue": 63120.888
+        },
+        {
+          "year": 2017,
+          "month": 9,
+          "month_name": "Sep",
+          "revenue": 87866.652
+        },
+        {
+          "year": 2017,
+          "month": 10,
+          "month_name": "Oct",
+          "revenue": 77776.9232
+        },
+        {
+          "year": 2017,
+          "month": 11,
+          "month_name": "Nov",
+          "revenue": 118447.825
+        },
+        {
+          "year": 2017,
+          "month": 12,
+          "month_name": "Dec",
+          "revenue": 83829.3188
         }
       ],
-      "summary": "Revenue trended stable (-4.3%) over the reporting period."
+      "summary": "Revenue trended increasing (+488.8%) over the reporting period."
     },
     {
       "title": "Revenue by Category",
@@ -594,27 +798,19 @@
       "dimension": "category",
       "data": [
         {
-          "category": "Electronics",
-          "value": 313838778.12
+          "category": "Technology",
+          "value": 836154.03
         },
         {
           "category": "Furniture",
-          "value": 115626432.97
+          "value": 741999.8
         },
         {
-          "category": "Sports",
-          "value": 56642867.98
-        },
-        {
-          "category": "Clothing",
-          "value": 19151239.68
-        },
-        {
-          "category": "Groceries",
-          "value": 7903674.8
+          "category": "Office Supplies",
+          "value": 719047.03
         }
       ],
-      "summary": "Electronics generated the highest revenue (INR 313,838,778)."
+      "summary": "Technology generated the highest revenue (INR 836,154)."
     },
     {
       "title": "Revenue by Region",
@@ -623,27 +819,23 @@
       "dimension": "region",
       "data": [
         {
-          "region": "East",
-          "value": 108013932.02
+          "region": "West",
+          "value": 725457.82
         },
         {
-          "region": "North",
-          "value": 103526263.9
+          "region": "East",
+          "value": 678781.24
         },
         {
           "region": "Central",
-          "value": 103169649.91
-        },
-        {
-          "region": "West",
-          "value": 99700604.36
+          "value": 501239.89
         },
         {
           "region": "South",
-          "value": 98752543.36
+          "value": 391721.91
         }
       ],
-      "summary": "East led all regions in revenue."
+      "summary": "West led all regions in revenue."
     },
     {
       "title": "Quarterly Revenue",
@@ -652,24 +844,84 @@
       "dimension": "quarter",
       "data": [
         {
-          "year": 2025,
+          "year": 2014,
           "quarter": "Q1",
-          "revenue": 119373084.34
+          "revenue": 74447.796
         },
         {
-          "year": 2025,
+          "year": 2014,
           "quarter": "Q2",
-          "revenue": 130166193.06
+          "revenue": 86538.7596
         },
         {
-          "year": 2025,
+          "year": 2014,
           "quarter": "Q3",
-          "revenue": 131569758.97
+          "revenue": 143633.2123
         },
         {
-          "year": 2025,
+          "year": 2014,
           "quarter": "Q4",
-          "revenue": 132053957.18
+          "revenue": 179627.7302
+        },
+        {
+          "year": 2015,
+          "quarter": "Q1",
+          "revenue": 68851.7386
+        },
+        {
+          "year": 2015,
+          "quarter": "Q2",
+          "revenue": 89124.187
+        },
+        {
+          "year": 2015,
+          "quarter": "Q3",
+          "revenue": 130259.5752
+        },
+        {
+          "year": 2015,
+          "quarter": "Q4",
+          "revenue": 182297.0082
+        },
+        {
+          "year": 2016,
+          "quarter": "Q1",
+          "revenue": 93237.181
+        },
+        {
+          "year": 2016,
+          "quarter": "Q2",
+          "revenue": 136082.301
+        },
+        {
+          "year": 2016,
+          "quarter": "Q3",
+          "revenue": 143787.3622
+        },
+        {
+          "year": 2016,
+          "quarter": "Q4",
+          "revenue": 236098.7538
+        },
+        {
+          "year": 2017,
+          "quarter": "Q1",
+          "revenue": 123144.8602
+        },
+        {
+          "year": 2017,
+          "quarter": "Q2",
+          "revenue": 133764.372
+        },
+        {
+          "year": 2017,
+          "quarter": "Q3",
+          "revenue": 196251.956
+        },
+        {
+          "year": 2017,
+          "quarter": "Q4",
+          "revenue": 280054.067
         }
       ],
       "summary": "Quarterly revenue breakdown for the reporting period."
