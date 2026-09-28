@@ -498,295 +498,199 @@
       "title": "Monthly Revenue",
       "type": "line",
       "metric": "Revenue",
-      "dimension": "date",
+      "dimension": "period",
       "data": [
         {
-          "year": 2014,
-          "month": 1,
-          "month_name": "Jan",
-          "revenue": 14236.895
+          "period": "2014-01",
+          "value": 14236.895
         },
         {
-          "year": 2014,
-          "month": 2,
-          "month_name": "Feb",
-          "revenue": 4519.892
+          "period": "2014-02",
+          "value": 4519.892
         },
         {
-          "year": 2014,
-          "month": 3,
-          "month_name": "Mar",
-          "revenue": 55691.009
+          "period": "2014-03",
+          "value": 55691.009
         },
         {
-          "year": 2014,
-          "month": 4,
-          "month_name": "Apr",
-          "revenue": 28295.345
+          "period": "2014-04",
+          "value": 28295.345
         },
         {
-          "year": 2014,
-          "month": 5,
-          "month_name": "May",
-          "revenue": 23648.287
+          "period": "2014-05",
+          "value": 23648.287
         },
         {
-          "year": 2014,
-          "month": 6,
-          "month_name": "Jun",
-          "revenue": 34595.1276
+          "period": "2014-06",
+          "value": 34595.1276
         },
         {
-          "year": 2014,
-          "month": 7,
-          "month_name": "Jul",
-          "revenue": 33946.393
+          "period": "2014-07",
+          "value": 33946.393
         },
         {
-          "year": 2014,
-          "month": 8,
-          "month_name": "Aug",
-          "revenue": 27909.4685
+          "period": "2014-08",
+          "value": 27909.4685
         },
         {
-          "year": 2014,
-          "month": 9,
-          "month_name": "Sep",
-          "revenue": 81777.3508
+          "period": "2014-09",
+          "value": 81777.3508
         },
         {
-          "year": 2014,
-          "month": 10,
-          "month_name": "Oct",
-          "revenue": 31453.393
+          "period": "2014-10",
+          "value": 31453.393
         },
         {
-          "year": 2014,
-          "month": 11,
-          "month_name": "Nov",
-          "revenue": 78628.7167
+          "period": "2014-11",
+          "value": 78628.7167
         },
         {
-          "year": 2014,
-          "month": 12,
-          "month_name": "Dec",
-          "revenue": 69545.6205
+          "period": "2014-12",
+          "value": 69545.6205
         },
         {
-          "year": 2015,
-          "month": 1,
-          "month_name": "Jan",
-          "revenue": 18174.0756
+          "period": "2015-01",
+          "value": 18174.0756
         },
         {
-          "year": 2015,
-          "month": 2,
-          "month_name": "Feb",
-          "revenue": 11951.411
+          "period": "2015-02",
+          "value": 11951.411
         },
         {
-          "year": 2015,
-          "month": 3,
-          "month_name": "Mar",
-          "revenue": 38726.252
+          "period": "2015-03",
+          "value": 38726.252
         },
         {
-          "year": 2015,
-          "month": 4,
-          "month_name": "Apr",
-          "revenue": 34195.2085
+          "period": "2015-04",
+          "value": 34195.2085
         },
         {
-          "year": 2015,
-          "month": 5,
-          "month_name": "May",
-          "revenue": 30131.6865
+          "period": "2015-05",
+          "value": 30131.6865
         },
         {
-          "year": 2015,
-          "month": 6,
-          "month_name": "Jun",
-          "revenue": 24797.292
+          "period": "2015-06",
+          "value": 24797.292
         },
         {
-          "year": 2015,
-          "month": 7,
-          "month_name": "Jul",
-          "revenue": 28765.325
+          "period": "2015-07",
+          "value": 28765.325
         },
         {
-          "year": 2015,
-          "month": 8,
-          "month_name": "Aug",
-          "revenue": 36898.332200000004
+          "period": "2015-08",
+          "value": 36898.332200000004
         },
         {
-          "year": 2015,
-          "month": 9,
-          "month_name": "Sep",
-          "revenue": 64595.918
+          "period": "2015-09",
+          "value": 64595.918
         },
         {
-          "year": 2015,
-          "month": 10,
-          "month_name": "Oct",
-          "revenue": 31404.9235
+          "period": "2015-10",
+          "value": 31404.9235
         },
         {
-          "year": 2015,
-          "month": 11,
-          "month_name": "Nov",
-          "revenue": 75972.5635
+          "period": "2015-11",
+          "value": 75972.5635
         },
         {
-          "year": 2015,
-          "month": 12,
-          "month_name": "Dec",
-          "revenue": 74919.5212
+          "period": "2015-12",
+          "value": 74919.5212
         },
         {
-          "year": 2016,
-          "month": 1,
-          "month_name": "Jan",
-          "revenue": 18542.491
+          "period": "2016-01",
+          "value": 18542.491
         },
         {
-          "year": 2016,
-          "month": 2,
-          "month_name": "Feb",
-          "revenue": 22978.815000000002
+          "period": "2016-02",
+          "value": 22978.815000000002
         },
         {
-          "year": 2016,
-          "month": 3,
-          "month_name": "Mar",
-          "revenue": 51715.875
+          "period": "2016-03",
+          "value": 51715.875
         },
         {
-          "year": 2016,
-          "month": 4,
-          "month_name": "Apr",
-          "revenue": 38750.039
+          "period": "2016-04",
+          "value": 38750.039
         },
         {
-          "year": 2016,
-          "month": 5,
-          "month_name": "May",
-          "revenue": 56987.728
+          "period": "2016-05",
+          "value": 56987.728
         },
         {
-          "year": 2016,
-          "month": 6,
-          "month_name": "Jun",
-          "revenue": 40344.534
+          "period": "2016-06",
+          "value": 40344.534
         },
         {
-          "year": 2016,
-          "month": 7,
-          "month_name": "Jul",
-          "revenue": 39261.963
+          "period": "2016-07",
+          "value": 39261.963
         },
         {
-          "year": 2016,
-          "month": 8,
-          "month_name": "Aug",
-          "revenue": 31115.3743
+          "period": "2016-08",
+          "value": 31115.3743
         },
         {
-          "year": 2016,
-          "month": 9,
-          "month_name": "Sep",
-          "revenue": 73410.0249
+          "period": "2016-09",
+          "value": 73410.0249
         },
         {
-          "year": 2016,
-          "month": 10,
-          "month_name": "Oct",
-          "revenue": 59687.745
+          "period": "2016-10",
+          "value": 59687.745
         },
         {
-          "year": 2016,
-          "month": 11,
-          "month_name": "Nov",
-          "revenue": 79411.9658
+          "period": "2016-11",
+          "value": 79411.9658
         },
         {
-          "year": 2016,
-          "month": 12,
-          "month_name": "Dec",
-          "revenue": 96999.043
+          "period": "2016-12",
+          "value": 96999.043
         },
         {
-          "year": 2017,
-          "month": 1,
-          "month_name": "Jan",
-          "revenue": 43971.374
+          "period": "2017-01",
+          "value": 43971.374
         },
         {
-          "year": 2017,
-          "month": 2,
-          "month_name": "Feb",
-          "revenue": 20301.1334
+          "period": "2017-02",
+          "value": 20301.1334
         },
         {
-          "year": 2017,
-          "month": 3,
-          "month_name": "Mar",
-          "revenue": 58872.3528
+          "period": "2017-03",
+          "value": 58872.3528
         },
         {
-          "year": 2017,
-          "month": 4,
-          "month_name": "Apr",
-          "revenue": 36521.5361
+          "period": "2017-04",
+          "value": 36521.5361
         },
         {
-          "year": 2017,
-          "month": 5,
-          "month_name": "May",
-          "revenue": 44261.1102
+          "period": "2017-05",
+          "value": 44261.1102
         },
         {
-          "year": 2017,
-          "month": 6,
-          "month_name": "Jun",
-          "revenue": 52981.7257
+          "period": "2017-06",
+          "value": 52981.7257
         },
         {
-          "year": 2017,
-          "month": 7,
-          "month_name": "Jul",
-          "revenue": 45264.416
+          "period": "2017-07",
+          "value": 45264.416
         },
         {
-          "year": 2017,
-          "month": 8,
-          "month_name": "Aug",
-          "revenue": 63120.888
+          "period": "2017-08",
+          "value": 63120.888
         },
         {
-          "year": 2017,
-          "month": 9,
-          "month_name": "Sep",
-          "revenue": 87866.652
+          "period": "2017-09",
+          "value": 87866.652
         },
         {
-          "year": 2017,
-          "month": 10,
-          "month_name": "Oct",
-          "revenue": 77776.9232
+          "period": "2017-10",
+          "value": 77776.9232
         },
         {
-          "year": 2017,
-          "month": 11,
-          "month_name": "Nov",
-          "revenue": 118447.825
+          "period": "2017-11",
+          "value": 118447.825
         },
         {
-          "year": 2017,
-          "month": 12,
-          "month_name": "Dec",
-          "revenue": 83829.3188
+          "period": "2017-12",
+          "value": 83829.3188
         }
       ],
       "summary": "Revenue trended increasing (+488.8%) over the reporting period."
@@ -841,87 +745,71 @@
       "title": "Quarterly Revenue",
       "type": "bar",
       "metric": "Revenue",
-      "dimension": "quarter",
+      "dimension": "period",
       "data": [
         {
-          "year": 2014,
-          "quarter": "Q1",
-          "revenue": 74447.796
+          "period": "2014-Q1",
+          "value": 74447.796
         },
         {
-          "year": 2014,
-          "quarter": "Q2",
-          "revenue": 86538.7596
+          "period": "2014-Q2",
+          "value": 86538.7596
         },
         {
-          "year": 2014,
-          "quarter": "Q3",
-          "revenue": 143633.2123
+          "period": "2014-Q3",
+          "value": 143633.2123
         },
         {
-          "year": 2014,
-          "quarter": "Q4",
-          "revenue": 179627.7302
+          "period": "2014-Q4",
+          "value": 179627.7302
         },
         {
-          "year": 2015,
-          "quarter": "Q1",
-          "revenue": 68851.7386
+          "period": "2015-Q1",
+          "value": 68851.7386
         },
         {
-          "year": 2015,
-          "quarter": "Q2",
-          "revenue": 89124.187
+          "period": "2015-Q2",
+          "value": 89124.187
         },
         {
-          "year": 2015,
-          "quarter": "Q3",
-          "revenue": 130259.5752
+          "period": "2015-Q3",
+          "value": 130259.5752
         },
         {
-          "year": 2015,
-          "quarter": "Q4",
-          "revenue": 182297.0082
+          "period": "2015-Q4",
+          "value": 182297.0082
         },
         {
-          "year": 2016,
-          "quarter": "Q1",
-          "revenue": 93237.181
+          "period": "2016-Q1",
+          "value": 93237.181
         },
         {
-          "year": 2016,
-          "quarter": "Q2",
-          "revenue": 136082.301
+          "period": "2016-Q2",
+          "value": 136082.301
         },
         {
-          "year": 2016,
-          "quarter": "Q3",
-          "revenue": 143787.3622
+          "period": "2016-Q3",
+          "value": 143787.3622
         },
         {
-          "year": 2016,
-          "quarter": "Q4",
-          "revenue": 236098.7538
+          "period": "2016-Q4",
+          "value": 236098.7538
         },
         {
-          "year": 2017,
-          "quarter": "Q1",
-          "revenue": 123144.8602
+          "period": "2017-Q1",
+          "value": 123144.8602
         },
         {
-          "year": 2017,
-          "quarter": "Q2",
-          "revenue": 133764.372
+          "period": "2017-Q2",
+          "value": 133764.372
         },
         {
-          "year": 2017,
-          "quarter": "Q3",
-          "revenue": 196251.956
+          "period": "2017-Q3",
+          "value": 196251.956
         },
         {
-          "year": 2017,
-          "quarter": "Q4",
-          "revenue": 280054.067
+          "period": "2017-Q4",
+          "value": 280054.067
         }
       ],
       "summary": "Quarterly revenue breakdown for the reporting period."

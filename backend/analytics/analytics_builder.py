@@ -90,10 +90,11 @@ def build_analytics_json(csv_path: str | Path) -> dict:
             "title":     "Monthly Revenue",
             "type":      "line",
             "metric":    "Revenue",
-            "dimension": "date",
-            "data":      monthly.rename(columns={"sales": "value"}).to_dict(orient="records")
-            if "sales" in monthly.columns
-            else monthly.to_dict(orient="records"),
+            "dimension": "period",
+            "data":      [
+                {"period": f"{r['year']}-{str(r['month']).zfill(2)}", "value": float(r['revenue'])}
+                for r in monthly.to_dict(orient="records")
+            ],
             "summary":   (
                 f"Revenue trended {analytics_payload['trends'][0]['direction']} "
                 f"({analytics_payload['trends'][0]['change']:+.1f}%) over the reporting period."
@@ -134,8 +135,11 @@ def build_analytics_json(csv_path: str | Path) -> dict:
             "title":     "Quarterly Revenue",
             "type":      "bar",
             "metric":    "Revenue",
-            "dimension": "quarter",
-            "data":      quarterly.to_dict(orient="records"),
+            "dimension": "period",
+            "data":      [
+                {"period": f"{r['year']}-{r['quarter']}", "value": float(r['revenue'])}
+                for r in quarterly.to_dict(orient="records")
+            ],
             "summary":   "Quarterly revenue breakdown for the reporting period.",
         },
     ]
